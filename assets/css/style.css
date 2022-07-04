@@ -1,0 +1,276 @@
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  font-family: "Lora";
+  background-color: #020403;
+  color: #ffffff;
+  justify-content: flex-end;
+  background-image: url(/assets/gift/881563d6444b370fa4ceea0c3183bb4c.gif);
+}
+img {
+  width: 100%;
+}
+h2 {
+  font-size: 2rem;
+}
+.fond {
+  background-color: black;
+}
+/*Parte del Hero*/
+.hero__navbar {
+  background-color: #020403;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.hero__navbar nav {
+  padding: 0 20px;
+  display: flex;
+  gap: 1.5rem;
+}
+.hero__navbar a {
+  font-size: 1, 25rem;
+  color: yellow;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+.hero__navbar a:hover {
+  color: white;
+}
+.hero__container {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.hero__imgcontainer {
+  width: 250px;
+  height: 250px;
+  margin-bottom: 1rem;
+}
+.hero__imgcontainer img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  margin: 0;
+}
+.hero__info {
+  text-align: center;
+  width: 380px;
+  color: white;
+}
+.hero__title,
+.hero__subtitle {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 1px 2px white;
+}
+.hero__subtitle {
+  color: white;
+  font-size: clamp(16px, 4vw, 45px);
+}
+.hero__social {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
+.hero__social i {
+  font-size: 38px;
+  color: lightskyblue;
+  color: yellow;
+  /* color: greenyellow; */
+  /* color: orange; */
+  transition: all 0.3s ease-in-out;
+}
+.hero__social i:hover {
+  color: grey;
+}
+
+/*Parte del Wrapper*/
+.wrapper {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.about {
+  padding: 5rem 20px;
+  padding-top: 0;
+  text-align: center;
+}
+.about__title {
+  font-size: 2rem;
+  color: white;
+  background-color: #020403;
+  display: inline-block;
+  margin-bottom: 8px;
+  padding: 0;
+}
+.about__text {
+  background-color: #020403;
+}
+
+/*Parte de las skill*/
+.skill {
+  padding: 5rem 20px;
+  padding-top: 0;
+  text-align: center;
+}
+.skill__title {
+  font-size: 2rem;
+  color: white;
+  background-color: #020403;
+  display: inline-block;
+  margin-bottom: 8px;
+  padding: 0;
+}
+.skills__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+.skill--item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skill--img1,
+.skill--img2,
+.skill--img3,
+.skill--img4 {
+  width: 70px;
+  height: 70px;
+  border: 10px;
+  border: solid;
+  border-color: white;
+  border-radius: 50%;
+  background-color: #020403;
+}
+
+/*Parte de la Experience*/
+.experience {
+  padding: 5rem 20px;
+  padding-top: 0;
+  text-align: center;
+}
+.experience h2 {
+  background-color: black;
+  display: inline-block;
+}
+
+.exp__card1,
+.exp__card2,
+.exp__card3 {
+  display: grid;
+  grid-template-columns: repeat(2, 33.5%);
+}
+.exp__card1,
+.exp__card2 {
+  border-bottom: 2px solid white;
+}
+.uno {
+  margin: 0;
+  color: lightsteelblue;
+}
+.info {
+  margin-bottom: 0;
+}
+.date {
+  margin-bottom: 0;
+  color: lightsteelblue;
+}
+.exp__card1 :nth-child(1),
+.exp__card2 :nth-child(1),
+.exp__card3 :nth-child(1) {
+  grid-column: 1/2;
+  grid-row: 1/3;
+  background-color: black;
+  align-self: center;
+  justify-self: center;
+}
+.exp__card1 :nth-child(2),
+.exp__card2 :nth-child(2),
+.exp__card3 :nth-child(2),
+.exp__card1 :nth-child(3),
+.exp__card2 :nth-child(3),
+.exp__card3 :nth-child(3) {
+  background-color: black;
+  justify-self: center;
+}
+
+/*Parte del portfolio*/
+.portfolio {
+  padding: 5rem 20px;
+  padding-top: 0;
+  text-align: center;
+}
+.portfolio h2 {
+  background-color: black;
+  display: inline-block;
+}
+.portfolio__container {
+  display: flex;
+  gap: 1rem;
+  flex-direction: row;
+}
+.portfolio__pro1 {
+  width: 50%;
+  height: 50%;
+}
+.portfolio__pro2 {
+  width: 50%;
+  height: 50%;
+}
+.portfolio__pro3 {
+  width: 50%;
+  height: 50%;
+}
+
+/*Contact*/
+
+.contact {
+  padding: 5rem 20px;
+  padding-top: 0;
+  text-align: center;
+}
+.contact h2 {
+  background-color: black;
+}
+.contact__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1.5fr);
+  gap: 1rem;
+}
+.contact__m1,
+.contact__m2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact__m1 {
+  padding-left: 15vw;
+}
+.contact__m2 {
+  padding-right: 15vw;
+}
+.phone,
+.mail {
+  width: 80px;
+  height: 80px;
+  border: 5px;
+  border: solid;
+  border-color: white;
+  border-radius: 50%;
+  background-color: #020403;
+}
