@@ -127,9 +127,7 @@ h2 {
   color: yellow;
   transition: all 0.3s ease-in-out;
 }
-.hero__social i:hover {
-  color: grey;
-}
+
 /*Parte del Wrapper*/
 .wrapper {
   max-width: 1024px;
@@ -313,9 +311,7 @@ h2 {
   .hero__container {
     padding-top: 0;
   }
-  .hero__social i:hover {
-    color: yellow;
-  }
+
   .hero__imgcontainer {
     width: 250px;
     height: 250px;
@@ -443,9 +439,6 @@ h2 {
   .hero__menu a {
     font-size: 20px;
   }
-  .hero__social i:hover {
-    color: yellow;
-  }
 }
 @media (max-width: 832px) {
   .hero__menu a {
@@ -481,5 +474,10 @@ h2 {
     width: 100px;
     height: 100px;
     border: 100px;
+  }
+}
+@media (min-width: 983px) {
+  .hero__social i:hover {
+    color: grey;
   }
 }
