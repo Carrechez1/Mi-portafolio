@@ -130,7 +130,6 @@ h2 {
 .hero__social i:hover {
   color: grey;
 }
-
 /*Parte del Wrapper*/
 .wrapper {
   max-width: 1024px;
@@ -314,6 +313,9 @@ h2 {
   .hero__container {
     padding-top: 0;
   }
+  .hero__social i:hover {
+    color: yellow;
+  }
   .hero__imgcontainer {
     width: 250px;
     height: 250px;
@@ -440,6 +442,9 @@ h2 {
 @media (max-width: 982px) {
   .hero__menu a {
     font-size: 20px;
+  }
+  .hero__social i:hover {
+    color: yellow;
   }
 }
 @media (max-width: 832px) {
