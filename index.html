@@ -21,17 +21,30 @@
 </head>
 
 <body>
-  <header class="hero">
+  <!--Cabecera-->
+  <header id="inicio" class="hero">
     <div class="hero__navbar">
-      <nav>
-        <a href="#"><b>Home</b></a>
-        <a href="#"><b>Acerca de mi</b></a>
-        <a href="#"><b>Mis Habilidades</b></a>
-        <a href="#"><b>Experiencia</b></a>
-        <a href="#"><b>Proyectos</b></a>
-        <a href="#"><b>Contactos</b></a>
-      </nav>
+      <div class="hero__interior">
+        <div id="hero__menu" class="hero__menu">
+          <button id="hero__cerrar" class="hero__cerrar"><i class='bx bxs-message-square-x'></i></button>
+          <nav>
+            <div class="hero__navbar-lista">
+              <nav>
+                <a href="index.html">Inicio</a>
+                <a href="index.html#acerca_de_mi">Acerca de mi</a>
+                <a href="index.html#mis_habilidades">Mis habilidades</a>
+                <a href="index.html#experiencia">Experiencia</a>
+                <a href="index.html#proyectos">Proyectos</a>
+                <a href="index.html#contacto">Contacto</a>
+              </nav>
+            </div>
+        </div>
+        <div class="hero__btnnav">
+          <button id="btnnav" class="btnnav"><i class='bx bx-menu'></i></button>
+        </div>
+      </div>
     </div>
+    <!--Informacion Personal-->
     <div class="hero__container">
       <div class="hero__imgcontainer">
         <img src="/assets/img/WhatsApp Image 2022-07-01 at 2.58.02 PM.jpeg" alt="Mi foto">
@@ -41,24 +54,34 @@
         <h1 class="hero__title">Hola, soy Jose Carrero</h1>
         <h2 class="hero__subtitle">Diseñador y desarrollador web</h2>
         <div class="hero__social">
-          <a href="#"><i class='bx bxl-whatsapp-square'></i></a>
-          <a href="#"><i class='bx bxl-instagram-alt'></i></a>
-          <a href="#"><i class='bx bxl-linkedin-square'></i></a>
-          <a href="#"><i class='bx bxl-facebook-square'></i></a>
+          <a href="https://wa.me/+584161706020" target="_blank"><i class='bx bxl-whatsapp-square'></i></a>
+          <a href="https://www.instagram.com/alejandro_carrero_/" target="_blank"><i
+              class='bx bxl-instagram-alt'></i></a>
+          <a href="https://www.linkedin.com/in/jose-carrero-40a115241/" target="_blank"><i
+              class='bx bxl-linkedin-square'></i></a>
+          <a href="https://www.facebook.com/josealejandro.carrerosanchez.73" target="_blank"><i
+              class='bx bxl-facebook-square'></i></a>
         </div>
       </div>
     </div>
   </header>
   <main class="wrapper">
-    <section class="about">
+    <section id="acerca_de_mi" class="about">
       <h2 class="about__title">Acerca de mi</h2>
-      <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus in dignissimos vel totam
-        atque excepturi.
-        Recusandae optio ea libero, necessitatibus quod cupiditate. Saepe quisquam laboriosam harum! Veniam vel fuga
-        incidunt.</p>
+      <p class="about__text">Hola, soy Jose Alejandro Carrero, tengo 22 años, soy de Venezuela y estudio ing en
+        Sistemas. Actualmente, estudio en Academlo, en lo que retomo la universidad para sacar mi titulo de Ingeniero.
+        Mientras tanto, refuerzo y mejoro mis conocimientos y habilidades en este arte que es programar </p>
+      <br><br><br>
+      <div class="inicio">
+        <span>
+          <a href="index.html#inicio">
+            <p>Inicio <i class='bx bxs-upvote'></i></p></i>
+          </a>
+        </span>
+      </div>
     </section>
-
-    <section class="skill">
+    <!--Habilidades-->
+    <section id="mis_habilidades" class="skill">
       <h2 class="skill__title">Mis habilidades</h2>
       <div class="skills__container">
         <div class="skill--item">
@@ -85,11 +108,18 @@
           </div>
           <span class="fond">Desarrollo web</span>
         </div>
-
+      </div>
+      <br><br><br>
+      <div class="inicio">
+        <span>
+          <a href="index.html#inicio">
+            <p>Inicio <i class='bx bxs-upvote'></i></p></i>
+          </a>
+        </span>
       </div>
     </section>
-
-    <section class="experience">
+    <!--Experiencias-->
+    <section id="experiencia" class="experience">
       <h2>Experiencia</h2>
       <div class="exp__container">
         <div class="exp__card1">
@@ -112,10 +142,19 @@
           <p class="uno">google</p>
         </div>
       </div>
+      <br><br><br>
+      <div class="inicio">
+        <span>
+          <a href="index.html#inicio">
+            <p>Inicio <i class='bx bxs-upvote'></i></p></i>
+          </a>
+        </span>
+      </div>
     </section>
 
-    <section class="portfolio">
-      <h2>Portafolio</h2>
+    <!--Proyectos-->
+    <section id="proyectos" class="portfolio">
+      <h2>Proyectos</h2>
       <div class="portfolio__container">
         <div class="portfolio__pro1">
           <img src="/assets/img/Rectangle 58.png" alt="proyecto 1">
@@ -127,27 +166,47 @@
           <img src="/assets/img/image 11.jpg" alt="proyecto 3">
         </div>
       </div>
+      <br><br><br>
+      <div class="inicio">
+        <span>
+          <a href="index.html#inicio">
+            <p>Inicio <i class='bx bxs-upvote'></i></p></i>
+          </a>
+        </span>
+      </div>
     </section>
+
   </main>
+  <!--Pie de pagina-->
   <footer class="footer">
-    <section class="contact">
+    <section id="contacto" class="contact">
       <h2>Contacto</h2>
       <div class="contact__container">
         <div class="contact__m1">
           <div class="phone">
-            <img src="/assets/svg/phone 3.svg" alt="phone">
+            <a href="tel:+584161706020"><img src="/assets/svg/phone 3.svg" alt="phone"></a>
           </div>
           <span class="fond">Numero de celular</span>
         </div>
         <div class="contact__m2">
           <div class="mail">
-            <img src="/assets/svg/mail 3.svg" alt="mail">
+            <a href="mailto:joseacarrero25@gmail.com"><img src="/assets/svg/mail 3.svg" alt="mail"></a>
+
           </div>
           <span class="fond">Correo electronico</span>
         </div>
       </div>
+      <br>
+      <div class="inicio">
+        <span>
+          <a href="index.html#inicio">
+            <p>Inicio <i class='bx bxs-upvote'></i></p></i>
+          </a>
+        </span>
+      </div>
     </section>
   </footer>
+  <script src="/assets/javascript/main.js"></script>
 </body>
 
 </html>
