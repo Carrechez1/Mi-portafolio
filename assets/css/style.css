@@ -11,17 +11,20 @@ html {
 body {
   margin: 0;
   font-family: "Lora";
-  background-color: #020403;
+  /* background-color: #020403; */
   color: #ffffff;
   justify-content: flex-end;
-  background-image: url(/assets/gift/881563d6444b370fa4ceea0c3183bb4c.gif);
+  background-image: url(/assets/gift/0cbf2f5c3fb37d033c0bc791ae196dbb.gif);
 }
 img {
   width: 100%;
 }
 h2 {
   font-size: 2.5rem;
+  color: yellow;
+  margin-bottom: 0;
 }
+
 .fond {
   background-color: black;
 }
@@ -140,11 +143,12 @@ h2 {
 }
 .about__title {
   font-size: 2rem;
-  color: white;
+  color: yellow;
   background-color: #020403;
   display: inline-block;
-  margin-bottom: 8px;
+  margin-bottom: 0px;
   padding: 0;
+  padding-top: 25px;
 }
 .about__text {
   background-color: #020403;
@@ -161,10 +165,10 @@ h2 {
 }
 .skill__title {
   font-size: 2rem;
-  color: white;
+  color: yellow;
   background-color: #020403;
   display: inline-block;
-  margin-bottom: 8px;
+  margin-bottom: 0;
   padding: 0;
 }
 .skills__container {
@@ -185,13 +189,43 @@ h2 {
   width: 120px;
   height: 120px;
   border: 10px;
-  border: solid;
-  border-color: white;
   border-radius: 50%;
   background-color: #020403;
 }
+.habilidades {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  margin-top: 40px;
+}
+.hab1,
+.hab2,
+.hab3 {
+  display: flex;
+  border: 5px solid yellow;
+  border-radius: 50%;
+  display: inline-block;
 
-/*Parte de la Experience*/
+  width: 160px;
+  height: 160px;
+  justify-self: center;
+  text-align: center;
+}
+.hab1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hab2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hab3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .experience {
   padding: 5rem 20px;
   padding-top: 0;
@@ -200,6 +234,7 @@ h2 {
 .experience h2 {
   background-color: black;
   display: inline-block;
+  margin-bottom: 0px;
 }
 
 .exp__card1,
@@ -262,18 +297,30 @@ h2 {
 .portfolio__pro1 {
   width: 100%;
   height: 100%;
+  background-color: black;
+  color: white;
+  font-size: 30px;
+  padding-bottom: 10px;
 }
 .portfolio__pro2 {
   width: 100%;
   height: 100%;
+  background-color: black;
+  color: white;
+  font-size: 30px;
+  padding-bottom: 10px;
 }
 .portfolio__pro3 {
   width: 100%;
   height: 100%;
+  background-color: black;
+  color: white;
+  font-size: 30px;
+  padding-bottom: 10px;
 }
 /*Contact*/
 .contact {
-  padding: 5rem 20px;
+  padding: 1rem 20px;
   padding-top: 0;
   text-align: center;
 }
@@ -306,6 +353,17 @@ h2 {
   border-color: white;
   border-radius: 50%;
   background-color: #020403;
+}
+.footer1 {
+  display: flex;
+  flex-direction: column;
+  background-color: #020403;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+}
+.footer1 span {
+  text-align: center;
 }
 @media (max-width: 500px) {
   .hero__container {
@@ -428,6 +486,18 @@ h2 {
   .portfolio__pro3 {
     width: 70%;
     height: 70%;
+  }
+  .habilidades {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+    margin-top: 40px;
+  }
+  .habilidades div:nth-child(3) {
+    /* grid-row-start: 1;
+    grid-row-end: 3; */
+    grid-column-start: 1;
+    grid-column-end: 3;
   }
 }
 @media (max-width: 1130px) {
